@@ -1,3 +1,3 @@
-<footer style="background-image: url('{{ asset('images/header_background.jpg') }}')">
+<footer>
     <div class="copyright">(C) Copyright</div>
 </footer>

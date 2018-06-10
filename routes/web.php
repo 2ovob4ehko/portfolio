@@ -15,3 +15,6 @@
 //     return view('welcome');
 // });
 Route::get('/', 'Controller@main');
+Route::get('/admin', 'Controller@admin');
+Route::post('/auth', 'Controller@auth');
+Route::get('/logout', 'Controller@logout');

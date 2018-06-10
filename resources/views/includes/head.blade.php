@@ -7,5 +7,6 @@
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <title>@yield('page_title')</title>
     </head>
-    <body class="@yield('body_class')" style="background-image: url('{{ asset('images/header_background.jpg')}}')">
+    <body class="@yield('body_class')">
+        <div class="body_background" style="background-image: url('{{ asset('images/background.jpg')}}')"></div>
         @include('includes.header')

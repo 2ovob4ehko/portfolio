@@ -8493,9 +8493,19 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-body {
-  background-size: contain;
-  background-position: 50% -135px;
+.body_background {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  -webkit-filter: brightness(0.6);
+  filter: brightness(0.6);
 }
 
 .header {
@@ -8612,6 +8622,49 @@ footer .copyright {
   justify-content: center;
   width: 100%;
   color: #ffffff;
+}
+
+.admin .header {
+  height: 100px;
+}
+
+.admin .header .header_title {
+  margin: auto;
+}
+
+.admin .admin_menu {
+  width: 100%;
+  background: #ccc;
+  padding: 5px 15px;
+  border-radius: 4px;
+}
+
+.admin .admin_menu ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.admin .admin_menu ul a {
+  color: #000000;
+  border-radius: 4px;
+}
+
+.admin .admin_menu ul a .menu_item {
+  padding: 0 10px;
+}
+
+.admin .admin_menu ul a:hover {
+  text-decoration: none;
+  color: #999999;
+}
+
+.admin .admin_menu ul .line_to_right {
+  background: #999999;
+  width: 2px;
+  margin-left: auto;
 }
 
 @media (min-width: 576px) {

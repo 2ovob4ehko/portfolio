@@ -1,0 +1,9 @@
+@media (min-width: 576px){
+    .header{
+        .main_menu{
+            .main_menu_item{
+                width: calc(100% / 12 * 2);
+            }
+        }
+    }
+}
